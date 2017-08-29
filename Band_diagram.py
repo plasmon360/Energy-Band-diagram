@@ -19,7 +19,7 @@ class metal():
 
 # plot the band diagram of stack. Stack is a list of materials, filepath for the file which will store the banddiagram.
 
-def plot(stack, filepath = "test.png"):
+def plot(stack, filepath = "Images/test.png"):
     import matplotlib.pyplot as plt
     import matplotlib.patches as patches
 
@@ -89,7 +89,7 @@ if __name__ == "__main__":
     LiF_Al = metal(wf=-3.7, name = 'LiF/Al')
 
     stack = [ITO,p_nio,p3HT,PCBM,ZnO,LiF_Al]
-    plot(stack, filepath = 'Stack1.png')
+    plot(stack, filepath = 'Images/Stack1.png')
 
 
     # # Stack 2
@@ -101,7 +101,7 @@ if __name__ == "__main__":
     Al = metal(wf = -4.3, name = 'Al')
 
     stack =[Graphene, PEDOT, CuPC,C60, BCP, Al ]
-    plot(stack, filepath = 'Stack2.png')
+    plot(stack, filepath = 'Images/Stack2.png')
 
     # Stack 3
     ITO= metal(wf = -4.7, name = 'ITO')
@@ -113,7 +113,7 @@ if __name__ == "__main__":
     Ag = metal(wf = -4.6, name = 'Ag')
 
     stack =[ITO, Zno, AgBiS2,PTB7,niox, moo3, Ag]
-    plot(stack, filepath = 'Stack3.png')
+    plot(stack, filepath = 'Images/Stack3.png')
 
 
 
