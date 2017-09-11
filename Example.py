@@ -1,13 +1,12 @@
 from Band_diagram import metal, semiconductor, plot
 
-# Stack 3
-ITO = metal(wf=-4.7, name='ITO')
-Zno = semiconductor(cb=-4.25, vb=-7.4, name='ZnO')
-AgBiS2 = semiconductor(cb=-3.8, vb=-5.1, name='AgBiS2')
-PTB7 = semiconductor(cb=-3.5, vb=-5.25, name='PTB7')
-niox = semiconductor(cb=-1.85, vb=-5.49, name='NioX')
-moo3 = metal(wf=-5.4, name='MoO3')
-Ag = metal(wf=-4.6, name='Ag')
+# # stack 1
+ITO = metal(wf=-5.2, name='ITO')
+p_nio = semiconductor(cb=-1.85, vb=-5.49, name='P-NIO')
+p3HT = semiconductor(cb=-3, vb=-5.0, name='P3HT')
+PCBM = semiconductor(cb=-4, vb=-6.5, name='PCBM')
+ZnO = semiconductor(cb=-4.2, vb=-7.5, name='ZnO')
+LiF_Al = metal(wf=-3.7, name='LiF/Al')
 
-stack = [ITO, Zno, AgBiS2, PTB7, niox, moo3, Ag]
-plot(stack, filepath='Images/Stack3.png')
+stack = [ITO, p_nio, p3HT, PCBM, ZnO, LiF_Al]
+plot(stack, filepath='Images/Stack1.png')
