@@ -1,3 +1,4 @@
+
 from Band_diagram import metal, semiconductor, plot
 
 # # stack 1
